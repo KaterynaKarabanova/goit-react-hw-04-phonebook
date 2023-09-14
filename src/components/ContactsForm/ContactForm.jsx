@@ -11,6 +11,7 @@ export const ContactForm = ({ onFormSubmit }) => {
     name: '',
     number: '',
   });
+  console.log(state);
   const onInputChange = e => {
     setState({ [e.target.name]: e.target.value });
   };
