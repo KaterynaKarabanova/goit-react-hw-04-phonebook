@@ -37,7 +37,7 @@ export const App = () => {
     );
   };
   const onDelete = id => {
-    setContacts(contacts.filter(el => el.id !== id));
+    setContacts(prev => prev.filter(el => el.id !== id));
   };
 
   return (
